@@ -2,14 +2,24 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+      FindStringSize findStringSize = new FindStringSize();
+        findStringSize.findSize();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        StringComparison stringComparison = new StringComparison();
+        stringComparison.compare();
+
+        LexicographicalComparison lexicographicalComparison = new LexicographicalComparison();
+        lexicographicalComparison.lexicographicalCompare();
+
+        CheckPrefixAndSuffix checkPrefixAndSuffix = new CheckPrefixAndSuffix();
+        checkPrefixAndSuffix.checkPrefixAndSuffix();
+        FindFirstOccurrence findFirstOccurrence = new FindFirstOccurrence();
+        findFirstOccurrence.findFirstOccurrence();
+
+        CheckforSubstring checkforSubstring = new CheckforSubstring();
+        checkforSubstring.checkSubstring();
+
+        CodingChallenge codingChallenge = new CodingChallenge();
+        codingChallenge.check();
     }
 }
